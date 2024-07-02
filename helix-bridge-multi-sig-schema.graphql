@@ -21,17 +21,17 @@ type Transaction @createModel(accountRelation: LIST, description: "Transaction f
     to: String! @string(minLength: 1, maxLength: 100)
     value: String! @string(minLength: 1, maxLength: 100)
     data: String! @string(minLength: 1, maxLength: 100)
-    operation: Int! @int(min: 0, max: 1)
+    operation: Int! @int(min: 00, max: 1)
     gasToken: String! @string(minLength: 1, maxLength: 100)
-    safeTxGas: Int! @int(min: 1, max: 100)Å
-    baseGas: Int! @int(min: 1, max: 100)
+    safeTxGas: Int! @int(min: 0)
+    baseGas: Int! @int(min: 0)
     gasPrice: String! @string(minLength: 1, maxLength: 100)
     refundReceiver: String! @string(minLength: 1, maxLength: 100)
-    nonce: Int! @int(min: 1, max: 100)
+    nonce: Int! @int(min: 0)
     executionDate: String! @string(minLength: 1, maxLength: 100)
     submissionDate: String! @string(minLength: 1, maxLength: 100)
     modified: String! @string(minLength: 1, maxLength: 100)
-    blockNumber: Int! @int(min: 1, max: 100)
+    blockNumber: Int! @int(min: 0)
     transactionHash: String! @string(minLength: 1, maxLength: 100)
     safeTxHash: String! @string(minLength: 1, maxLength: 100)
     executor: String! @string(minLength: 1, maxLength: 100)
@@ -39,11 +39,11 @@ type Transaction @createModel(accountRelation: LIST, description: "Transaction f
     isExecuted: Boolean!
     isSuccessful: Boolean!
     ethGasPrice: String! @string(minLength: 1, maxLength: 100)
-    gasUsed: Int! @int(min: 1, max: 100)
+    gasUsed: Int! @int(min: 0)
     fee: String! @string(minLength: 1, maxLength: 100)
     origin: String! @string(minLength: 1, maxLength: 100)
     dataDecoded: String! @string(minLength: 1, maxLength: 100)
-    confirmationsRequired: Int! @int(min: 1, max: 100)
+    confirmationsRequired: Int! @int(min: 0)
     trusted: Boolean!
     signatures: String! @string(minLength: 1, maxLength: 100)
 }
