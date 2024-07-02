@@ -4,7 +4,7 @@
 
 ```bash
 npm install --location=global @ceramicnetwork/cli
-npm install # in the project dir
+npm install --location=global @composedb/cli
 ```
 
 ## Start Ceramic db
@@ -26,4 +26,9 @@ vim daemon.config.json
 # put your did in "admin-dids"
 # Restart ceramic
 ceramic daemon --network=inmemory/testnet-clay/mainnet
+```
+
+## Index/Subcribe to the data model
+```
+composedb composite:deploy helix-composite.json --ceramic-url=http://localhost:7007 --did-private-key=$YOUR_PRIVATE_KEY
 ```
