@@ -32,3 +32,6 @@ ceramic daemon --network=inmemory/testnet-clay/mainnet
 ```
 composedb composite:deploy helix-composite.json --ceramic-url=http://localhost:7007 --did-private-key=$YOUR_PRIVATE_KEY
 ```
+
+## Use the service from TypeScript client or start a graphQL server
+
