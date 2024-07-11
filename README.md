@@ -13,6 +13,8 @@ npm install --location=global @composedb/cli
 npx @ceramicnetwork/cli daemon
 ```
 
+## After the frist time launched daemon, you should stop it manully and edit your own `daemon.config.json`
+
 ## Using your account
 
 ```bash
