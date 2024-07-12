@@ -29,6 +29,10 @@ vim daemon.config.json
 # Restart ceramic
 ceramic daemon --network=inmemory/testnet-clay/mainnet
 ```
+## Generate model file from graphql
+```
+composedb composite:create helix-bridge-multi-sig-schema.graphql --output=helix-composite.json --did-private-key=YOUR KEY MATCHES ADMIN DIDS
+```
 
 ## Index/Subcribe to the data model
 ```
